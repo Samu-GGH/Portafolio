@@ -1,0 +1,161 @@
+body{
+	background: #F8F8F5;
+}
+.header-container{
+	display: inline-flex;
+	position: fixed;
+	background: rgb(95,11,231);
+	background: -moz-linear-gradient(45deg, rgba(95,11,231,1) 0%, rgba(27,81,180,1) 54%, rgba(0,211,255,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(95,11,231,1) 0%, rgba(27,81,180,1) 54%, rgba(0,211,255,1) 100%);
+	background: linear-gradient(45deg, rgba(95,11,231,1) 0%, rgba(27,81,180,1) 54%, rgba(0,211,255,1) 100%);
+	padding: 0;
+	margin: 0;
+	height: 75px;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+	box-shadow: 0 3px 20px 1px #000;
+	z-index: 1000;
+	transition: .5s ease;
+}
+
+.myName{
+	text-align: center;
+	margin: 7px 0 0 0;
+	color: #000;
+}
+
+.links-container{
+	display: flex;
+	position: relative;
+	height: 50%;
+}
+
+.links-list{
+	display: flex;
+	position: relative;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: nowrap;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.links-list > li > a{
+	position: relative;
+	height: 70%;
+ 	color: #111;
+ 	font-weight: 500;
+ 	padding: 4px 0;
+ 	text-decoration: none;
+ 	transition: 0.2s ease;
+}
+
+a:after{
+	content: "";
+	position: absolute;
+	background-color: #000;
+	width: 100%;
+	transform: scale(0, 1);
+	left: 0%;
+	bottom: -1px;
+	height: 3px;
+	transition: 0.2s ease;
+}
+
+.links-list > li > a:hover{
+ 	font-weight: 700;
+ 	color: #000;
+}
+
+a:hover::after{
+	transform: scale(1, 1);
+}
+
+.divide{
+	position: relative;
+	display: inline-block;
+	border: 1px solid #413e3e;
+	margin: 10px 0;
+}
+
+.main-container, .projects-container{
+	display: flex;
+	position: relative;
+	padding: 0;
+	overflow: hidden;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.aboutMe-container{
+	display: inline-block;
+	position: relative;
+}
+
+.img-container{
+	position: relative;
+	margin-top: 70px;
+}
+
+.aboutMe-title{
+	position: absolute;
+	color: #fff;
+	margin: 7px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 900;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.profile-photo{
+	position: relative;
+	width: 100%;
+	filter: brightness(0.3);
+	object-fit: cover;
+}
+
+.aboutMe-paragraph, .board-description, .wp-description{
+	position: relative;	
+	margin: 15px 15px 5px 15px;
+	text-align: justify;
+	font-size: 13px;
+}
+
+.video-board-container, .video-wp-container{
+	margin-bottom: 13px;
+}
+
+.project-title{
+	position: relative;
+	color: #2b2929;
+	padding: 7px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 900;
+}
+
+.video{
+	display: block;
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 14px;
+}
+
+.function-list{
+	font-size: 13px;
+}
+
+.rolldown{
+	transform: translateY(-125%);
+}
+
+.rollup{
+	transform: translateY(0px);
+}
