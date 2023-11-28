@@ -10,13 +10,12 @@ const ocultarHeader = ()=>{
 		else{
 			nav.classList.add("rollup");
 			nav.classList.remove("rolldown");
-			}
+			};
 	ubicacionPrinc = desplazamiento;
 	if (desplazamiento < 100) {
 		nav.classList.remove("rollup");
 		nav.classList.remove("rolldown"); 		
-		}
-		
+		};	
 }
 
 addEventListener("scroll", function(){ocultarHeader();});
