@@ -16,6 +16,7 @@ const ocultarHeader = ()=>{
 		nav.classList.remove("rollup");
 		nav.classList.remove("rolldown"); 		
 		}
+		
 }
 
 addEventListener("scroll", function(){ocultarHeader();});
