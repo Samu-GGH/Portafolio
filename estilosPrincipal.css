@@ -98,12 +98,12 @@ a:hover::after{
 
 .img-container{
 	position: relative;
-	margin-top: 70px;
+	margin-top: 100px;
 }
 
-.aboutMe-title{
+.aboutMe-title, .contact-title{
 	position: absolute;
-	color: #fff;
+	color: #222;
 	margin: 7px;
 	font-weight: bold;
 	text-align: center;
@@ -111,6 +111,9 @@ a:hover::after{
 	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
+}
+.contact-title{
+  	top: -55%;
 }
 
 .profile-photo{
@@ -158,4 +161,107 @@ a:hover::after{
 
 .rollup{
 	transform: translateY(0px);
+}
+
+.footer-container{
+	display: inline-flex;
+	position: relative;
+	background: rgb(58, 34, 97);
+	background: -moz-linear-gradient(45deg, rgb(46, 14, 99) 0%, rgba(27,81,180,1) 54%, rgba(0,211,255,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgb(108, 68, 173) 0%, rgba(27,81,180,1) 54%, rgba(0,211,255,1) 100%);
+	background: linear-gradient(45deg, rgb(11, 187, 231) 0%, rgb(11, 72, 185) 54%, rgb(50, 22, 153) 100%);
+	padding: 0;
+	margin: 0;
+	height: 170px;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+footer svg{
+	color: #2b2929;
+    height: 18px;
+}
+
+.contact-container{
+	display:inline-flex;
+	position: relative;
+	justify-content: space-evenly;
+}
+
+.footer-contact_list{
+	display: inline-block;
+	position: relative;
+}
+
+footer span{
+	color: #2b2929;
+	font-size: 17px;
+	font-weight: bold;
+	margin: 7px;
+}
+
+.list-links_footer{
+	display: inline-flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+.list-item{
+	margin: 5px 0 2px 0;
+	text-align: center;
+}
+
+.desingnedBy{
+	display: inline-block;
+	position: absolute;
+	color: #000;
+	bottom: 5px;
+	right: 3px;
+	font-size: 15px;
+	margin: 0
+}
+
+@media screen and (min-width: 768px){
+.header-container{
+		height: 90px;
+		justify-content: space-evenly;
+	}
+}
+
+.boards{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.projects-title{
+	height: fit-content;
+	font-size: 38px;
+}
+
+.project-title{
+	height: fit-content;
+	font-size: 28px;
+}
+
+.video-board-container{
+	display: inline-block
+}
+
+.video{
+	box-shadow: -4px 3px 8px #111;
+}
+
+.list-links_footer{
+	margin-top: 10px;
+}
+
+.footer-container{
+	height: 120px;
 }
