@@ -6,15 +6,18 @@ const ocultarHeader = ()=>{
 		if (ubicacionPrinc <= desplazamiento) {
 			nav.classList.add("rolldown");
 			nav.classList.remove("rollup");
+			nav.classList.remove("backblack"); 	
 		}
 		else{
 			nav.classList.add("rollup");
 			nav.classList.remove("rolldown");
+			nav.classList.add("backblack"); 	
 			};
 	ubicacionPrinc = desplazamiento;
-	if (desplazamiento < 100) {
+	if (desplazamiento < 50) {
 		nav.classList.remove("rollup");
-		nav.classList.remove("rolldown"); 		
+		nav.classList.remove("rolldown"); 	
+		nav.classList.remove("backblack"); 	
 		};	
 }
 

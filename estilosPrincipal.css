@@ -1,13 +1,14 @@
 body{
-	background: #F8F8F5;
+	background: rgb(9,0,29);
+	background: -moz-linear-gradient(45deg, rgba(9,0,29,1) 0%, rgba(3,0,62,1) 10%, rgba(0,1,27,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(9,0,29,1) 0%, rgba(3,0,62,1) 10%, rgba(0,1,27,1) 100%);
+	background: linear-gradient(45deg, rgba(9,0,29,1) 0%, rgba(3,0,62,1) 10%, rgba(0,1,27,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09001d",endColorstr="#00011b",GradientType=1);
 }
 .header-container{
 	display: inline-flex;
 	position: fixed;
-	background: rgb(95,11,231);
-	background: -moz-linear-gradient(45deg, rgba(95,11,231,1) 0%, rgba(27,81,180,1) 54%, rgba(0,211,255,1) 100%);
-	background: -webkit-linear-gradient(45deg, rgba(95,11,231,1) 0%, rgba(27,81,180,1) 54%, rgba(0,211,255,1) 100%);
-	background: linear-gradient(45deg, rgba(95,11,231,1) 0%, rgba(27,81,180,1) 54%, rgba(0,211,255,1) 100%);
+	background: rgba(0,0,0,0);
 	padding: 0;
 	margin: 0;
 	height: 75px;
@@ -15,7 +16,6 @@ body{
 	align-items: center;
 	flex-wrap: wrap;
 	overflow: hidden;
-	box-shadow: 0 3px 20px 1px #000;
 	z-index: 1000;
 	transition: .5s ease;
 }
@@ -23,7 +23,7 @@ body{
 .myName{
 	text-align: center;
 	margin: 7px 0 0 0;
-	color: #000;
+	color: #ffffff;
 }
 
 .links-container{
@@ -35,7 +35,7 @@ body{
 .links-list{
 	display: flex;
 	position: relative;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	flex-wrap: nowrap;
 	height: 100%;
@@ -47,8 +47,9 @@ body{
 .links-list > li > a{
 	position: relative;
 	height: 70%;
- 	color: #111;
+ 	color: #bbbbbb;
  	font-weight: 500;
+	font-size: 15px;
  	padding: 4px 0;
  	text-decoration: none;
  	transition: 0.2s ease;
@@ -57,7 +58,7 @@ body{
 a:after{
 	content: "";
 	position: absolute;
-	background-color: #000;
+	background-color: #ffffff;
 	width: 100%;
 	transform: scale(0, 1);
 	left: 0%;
@@ -68,7 +69,7 @@ a:after{
 
 .links-list > li > a:hover{
  	font-weight: 700;
- 	color: #000;
+ 	color: #ffffff;
 }
 
 a:hover::after{
@@ -78,8 +79,12 @@ a:hover::after{
 .divide{
 	position: relative;
 	display: inline-block;
-	border: 1px solid #413e3e;
+	border: 1px solid #bbbbbb;
 	margin: 10px 0;
+}
+
+.section-title{
+	color: #bbbbbb;
 }
 
 .main-container, .projects-container{
@@ -102,25 +107,30 @@ a:hover::after{
 }
 
 .aboutMe-title, .contact-title{
-	position: absolute;
-	color: #222;
+	position: relative;
+	color: #bbbbbb;
 	margin: 7px;
 	font-weight: bold;
 	text-align: center;
 	z-index: 900;
-	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
 }
 .contact-title{
-  	top: -30%;
-	color: #000000;
+	position: absolute;
+	color: #bbbbbb;
+	margin: 7px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 900;
+	top: -40%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	color: #bbbbbb;
 }
 
 .profile-photo{
 	position: relative;
 	width: 100%;
-	filter: brightness(0.3);
+	filter: brightness(1.2);
 	object-fit: cover;
 }
 
@@ -129,6 +139,7 @@ a:hover::after{
 	margin: 15px 15px 5px 15px;
 	text-align: justify;
 	font-size: 13px;
+	color: #bbbbbb;
 }
 
 .video-board-container, .video-wp-container{
@@ -137,7 +148,7 @@ a:hover::after{
 
 .project-title{
 	position: relative;
-	color: #2b2929;
+	color: #bbbbbb;
 	padding: 7px;
 	font-weight: bold;
 	text-align: center;
@@ -154,6 +165,7 @@ a:hover::after{
 
 .function-list{
 	font-size: 13px;
+	color: #bbbbbb;
 }
 
 .rolldown{
@@ -164,26 +176,26 @@ a:hover::after{
 	transform: translateY(0px);
 }
 
+.backblack{
+	background-color: rgba(0,0,0,0.7);
+}
+
 .footer-container{
 	display: inline-flex;
 	position: relative;
-	background: rgb(58, 34, 97);
-	background: -moz-linear-gradient(45deg, rgb(46, 14, 99) 0%, rgba(27,81,180,1) 54%, rgba(0,211,255,1) 100%);
-	background: -webkit-linear-gradient(45deg, rgb(108, 68, 173) 0%, rgba(27,81,180,1) 54%, rgba(0,211,255,1) 100%);
-	background: linear-gradient(45deg, rgb(11, 187, 231) 0%, rgb(11, 72, 185) 54%, rgb(50, 22, 153) 100%);
+	background: transparent;
 	padding: 0;
 	margin: 0;
 	height: 120px;
 	justify-content: space-around;
 	align-items: center;
-	box-shadow: 3px 0 20px 1px #000;
 	flex-wrap: wrap;
 	overflow: hidden;
 	z-index: 1000;
 }
 
 footer svg{
-	color: #000000;
+	color: #bbbbbb;
     height: 15px;
 }
 
@@ -199,7 +211,7 @@ footer svg{
 }
 
 footer span{
-	color: #000000;
+	color: #bbbbbb;
 	font-size: 15px;
 	font-weight: bold;
 	margin: 3px;
@@ -222,7 +234,7 @@ footer span{
 .desingnedBy{
 	display: inline-block;
 	position: absolute;
-	color: #000;
+	color: #fff;
 	bottom: 5px;
 	right: 3px;
 	font-size: 10px;
@@ -275,9 +287,9 @@ footer span{
 	display: inline-block
 }
 
-.video{
+/*.video{
 	box-shadow: -4px 3px 8px #111;
-}
+}*/
 
 .list-links_footer{
 	margin-top: 10px;
