@@ -242,14 +242,17 @@ footer span{
 	margin: 0
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 991px){
 .header-container{
 		height: 90px;
 		justify-content: space-evenly;
 	}
 
+.links-list{
+	justify-content: space-evenly;
+}
 
-.link{
+.links-list > li > a{
 	font-size: 18px;
 }
 
@@ -310,6 +313,36 @@ footer svg{
 footer span{
 	font-size: 17px;
 	margin: 6px;
+}
+
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+.header-container{
+	justify-content: space-evenly;
+}
+
+.links-list > li > a{
+	font-size: 20px;
+}
+
+.aboutMe-container{
+	display: inline-flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.aboutMe-title{
+	font-size: 38px;
+}
+
+.aboutMe-paragraph{
+	font-size: 19px;
+}
+
+.project-container{
+	display: inline-flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 
 }
