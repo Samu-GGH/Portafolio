@@ -1,10 +1,15 @@
-body{
-	background: rgb(9,0,29);
-	background: -moz-linear-gradient(45deg, rgba(9,0,29,1) 0%, rgba(3,0,62,1) 10%, rgba(0,1,27,1) 100%);
-	background: -webkit-linear-gradient(45deg, rgba(9,0,29,1) 0%, rgba(3,0,62,1) 10%, rgba(0,1,27,1) 100%);
-	background: linear-gradient(45deg, rgba(9,0,29,1) 0%, rgba(3,0,62,1) 10%, rgba(0,1,27,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#09001d",endColorstr="#00011b",GradientType=1);
+:root{
+	--color-1: #00004e;
+	--color-2: #00003e;
+	--color-3: #00002f;
+	--color-4: #00001f;
+	--color-5: #000010;
 }
+
+body{
+	background: var(--color-3)
+}
+
 .header-container{
 	display: inline-flex;
 	position: fixed;
@@ -16,7 +21,7 @@ body{
 	align-items: center;
 	flex-wrap: wrap;
 	overflow: hidden;
-	z-index: 1000;
+	z-index: 10000;
 	transition: .5s ease;
 }
 
@@ -76,13 +81,6 @@ a:hover::after{
 	transform: scale(1, 1);
 }
 
-.divide{
-	position: relative;
-	display: inline-block;
-	border: 1px solid #bbbbbb;
-	margin: 10px 0;
-}
-
 .section-title{
 	color: #bbbbbb;
 }
@@ -96,9 +94,16 @@ a:hover::after{
 	justify-content: center;
 }
 
+.projects-container{
+	background-color: var(--color-2);
+	padding: 20px 0;
+}
+
 .aboutMe-container{
 	display: inline-block;
 	position: relative;
+	z-index: 1000;
+	padding: 20px 0;
 }
 
 .img-container{
@@ -113,18 +118,6 @@ a:hover::after{
 	font-weight: bold;
 	text-align: center;
 	z-index: 900;
-}
-.contact-title{
-	position: absolute;
-	color: #bbbbbb;
-	margin: 7px;
-	font-weight: bold;
-	text-align: center;
-	z-index: 900;
-	top: -40%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-	color: #bbbbbb;
 }
 
 .profile-photo{
@@ -184,11 +177,11 @@ a:hover::after{
 	display: inline-flex;
 	position: relative;
 	background: transparent;
-	padding: 0;
+	padding: 20px 0;
 	margin: 0;
-	height: 120px;
+	height: 150px;
 	justify-content: space-around;
-	align-items: center;
+	align-content: space-between;
 	flex-wrap: wrap;
 	overflow: hidden;
 	z-index: 1000;
@@ -196,13 +189,15 @@ a:hover::after{
 
 footer svg{
 	color: #bbbbbb;
-    height: 15px;
+    height: 13px;
 }
 
 .contact-container{
 	display:inline-flex;
 	position: relative;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-content: space-around;
 }
 
 .footer-contact_list{
@@ -212,7 +207,7 @@ footer svg{
 
 footer span{
 	color: #bbbbbb;
-	font-size: 15px;
+	font-size: 13px;
 	font-weight: bold;
 	margin: 3px;
 }
@@ -283,16 +278,12 @@ footer span{
 
 .project-title{
 	height: fit-content;
-	font-size: 28px;
+	font-size: 29px;
 }
 
 .video-board-container{
 	display: inline-block
 }
-
-/*.video{
-	box-shadow: -4px 3px 8px #111;
-}*/
 
 .list-links_footer{
 	margin-top: 10px;
@@ -303,7 +294,7 @@ footer span{
 }
 
 .contact-title{
-	top: -50%;
+	top: 0%;
 }
 
 footer svg{
@@ -331,11 +322,19 @@ footer span{
 	flex-wrap: wrap;
 }
 
-.aboutMe-title{
+.aboutMe-title, .project-title{
 	font-size: 38px;
 }
 
-.aboutMe-paragraph{
+.contact-title{
+	font-size: 29px;
+}
+
+.projects-title{
+	font-size: 43px;
+}
+
+.aboutMe-paragraph, .board-description, .function-list{
 	font-size: 19px;
 }
 
@@ -343,6 +342,25 @@ footer span{
 	display: inline-flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+}
+
+.video-board-container{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-container{
+	height: 145px;
+}
+
+footer svg{
+    height: 19px;
+}
+
+footer span{
+	font-size: 19px;
+	margin: 6px;
 }
 
 }

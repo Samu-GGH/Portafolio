@@ -1,3 +1,4 @@
+//ocultar header
 let nav = document.querySelector(".site-header"); 
 let ubicacionPrinc = window.scrollY; 
 
@@ -22,3 +23,19 @@ const ocultarHeader = ()=>{
 }
 
 addEventListener("scroll", function(){ocultarHeader();});
+
+//modificar elementos con el ancho de pantalla
+
+
+let volleyContainer = document.querySelectorAll('.video-board-container')[1];
+let volleyVideo = document.querySelector('.video-volley');
+let functionVolleyContainer = document.querySelector('.function-container');
+
+const intercambiarItems = ()=>{
+	if (window.innerWidth < 992) volleyContainer.insertBefore(volleyVideo, functionVolleyContainer)
+	else if (window.innerWidth >= 992) volleyContainer.insertBefore(functionVolleyContainer, volleyVideo)
+}
+
+intercambiarItems();
+window.addEventListener("resize", function(){intercambiarItems();});
+
