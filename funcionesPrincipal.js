@@ -28,12 +28,21 @@ addEventListener("scroll", function(){ocultarHeader();});
 
 
 let volleyContainer = document.querySelectorAll('.video-board-container')[1];
+let baseballContainer = document.querySelectorAll('.video-board-container')[3];
 let volleyVideo = document.querySelector('.video-volley');
+let baseballVideo = document.querySelector('.video-baseball');
 let functionVolleyContainer = document.querySelector('.function-container');
+let baseballDescription = document.querySelector('.beisbol-description');
 
 const intercambiarItems = ()=>{
-	if (window.innerWidth < 992) volleyContainer.insertBefore(volleyVideo, functionVolleyContainer)
-	else if (window.innerWidth >= 992) volleyContainer.insertBefore(functionVolleyContainer, volleyVideo)
+	if (window.innerWidth < 992) {
+		volleyContainer.insertBefore(volleyVideo, functionVolleyContainer)
+		baseballContainer.insertBefore(baseballVideo, baseballDescription)
+	}
+	else if (window.innerWidth >= 992) {
+		volleyContainer.insertBefore(functionVolleyContainer, volleyVideo)
+		baseballContainer.insertBefore(baseballDescription, baseballVideo)
+	}
 }
 
 intercambiarItems();

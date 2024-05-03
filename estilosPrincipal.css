@@ -52,7 +52,7 @@ body{
 .links-list > li > a{
 	position: relative;
 	height: 70%;
- 	color: #bbbbbb;
+ 	color: #cccccc;
  	font-weight: 500;
 	font-size: 15px;
  	padding: 4px 0;
@@ -82,7 +82,7 @@ a:hover::after{
 }
 
 .section-title{
-	color: #bbbbbb;
+	color: #cccccc;
 }
 
 .main-container, .projects-container{
@@ -113,7 +113,7 @@ a:hover::after{
 
 .aboutMe-title, .contact-title{
 	position: relative;
-	color: #bbbbbb;
+	color: #cccccc;
 	margin: 7px;
 	font-weight: bold;
 	text-align: center;
@@ -132,7 +132,7 @@ a:hover::after{
 	margin: 15px 15px 5px 15px;
 	text-align: justify;
 	font-size: 13px;
-	color: #bbbbbb;
+	color: #cccccc;
 }
 
 .video-board-container, .video-wp-container{
@@ -141,7 +141,7 @@ a:hover::after{
 
 .project-title{
 	position: relative;
-	color: #bbbbbb;
+	color: #cccccc;
 	padding: 7px;
 	font-weight: bold;
 	text-align: center;
@@ -158,7 +158,7 @@ a:hover::after{
 
 .function-list{
 	font-size: 13px;
-	color: #bbbbbb;
+	color: #cccccc;
 }
 
 .rolldown{
@@ -177,9 +177,9 @@ a:hover::after{
 	display: inline-flex;
 	position: relative;
 	background: transparent;
-	padding: 20px 0;
+	padding: 10px 0;
 	margin: 0;
-	height: 150px;
+	height: 180px;
 	justify-content: space-around;
 	align-content: space-between;
 	flex-wrap: wrap;
@@ -188,16 +188,18 @@ a:hover::after{
 }
 
 footer svg{
-	color: #bbbbbb;
+	color: #cccccc;
     height: 13px;
+	transition: .5s ease;
 }
 
 .contact-container{
 	display:inline-flex;
 	position: relative;
+	height: 100%;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	align-content: space-around;
+	align-content: start;
 }
 
 .footer-contact_list{
@@ -206,10 +208,11 @@ footer svg{
 }
 
 footer span{
-	color: #bbbbbb;
+	color: #cccccc;
 	font-size: 13px;
 	font-weight: bold;
 	margin: 3px;
+	transition: .5s ease;
 }
 
 .list-links_footer{
@@ -222,8 +225,16 @@ footer span{
 }
 
 .list-item{
+	display: inline-flex;
 	margin: 5px 0 2px 0;
-	text-align: center;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.list-item:hover > span, .list-item:hover > svg{
+	color: #ffffff;
+	transition: .5s ease;
 }
 
 .desingnedBy{
@@ -293,6 +304,12 @@ footer span{
 	height: 120px;
 }
 
+.list-item{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .contact-title{
 	top: 0%;
 }
@@ -310,6 +327,10 @@ footer span{
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 .header-container{
 	justify-content: space-evenly;
+}
+
+.myName{
+	font-size: 40px;
 }
 
 .links-list > li > a{
@@ -354,12 +375,225 @@ footer span{
 	height: 145px;
 }
 
+.list-item{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
 footer svg{
     height: 19px;
 }
 
 footer span{
 	font-size: 19px;
+	margin: 6px;
+}
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+.header-container{
+	justify-content: space-evenly;
+	height: 120px;
+}
+
+.myName{
+	font-size: 55px;
+}
+
+.links-list > li > a{
+	font-size: 25px;
+}
+
+.aboutMe-container{
+	display: inline-flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.aboutMe-title, .project-title{
+	font-size: 42px;
+}
+
+.contact-title{
+	font-size: 33px;
+}
+
+.projects-title{
+	font-size: 46px;
+}
+
+.aboutMe-paragraph, .board-description, .function-list{
+	font-size: 24px;
+}
+
+.project-container{
+	display: inline-flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.video-board-container{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-container{
+	height: 160px;
+}
+
+.list-item{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer svg{
+	height: 24px;
+}
+
+footer span{
+	font-size: 24px;
+	margin: 6px;
+}
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1800px) {
+.header-container{
+	justify-content: space-evenly;
+	height: 125px;
+}
+
+.myName{
+	font-size: 62px;
+}
+
+.links-list > li > a{
+	font-size: 35px;
+}
+
+.aboutMe-container{
+	display: inline-flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.aboutMe-title, .project-title{
+	font-size: 45px;
+}
+
+.contact-title{
+	font-size: 37px;
+}
+
+.projects-title{
+	font-size: 46px;
+}
+
+.aboutMe-paragraph, .board-description, .function-list{
+	font-size: 31px;
+}
+
+.project-container{
+	display: inline-flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.video-board-container{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-container{
+	height: 180px;
+}
+
+.list-item{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer svg{
+	height: 31px;
+}
+
+footer span{
+	font-size: 31px;
+	margin: 6px;
+}
+
+}
+
+@media screen and (min-width: 1800px) {
+.header-container{
+	justify-content: space-evenly;
+	height: 140px;
+}
+
+.myName{
+	font-size: 75px;
+}
+
+.links-list > li > a{
+	font-size: 42px;
+}
+
+.aboutMe-container{
+	display: inline-flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.aboutMe-title, .project-title{
+	font-size: 62px;
+}
+
+.contact-title{
+	font-size: 37px;
+}
+
+.projects-title{
+	font-size: 68px;
+}
+
+.aboutMe-paragraph, .board-description, .function-list{
+	font-size: 38px;
+}
+
+.project-container{
+	display: inline-flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.video-board-container{
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-container{
+	height: 195px;
+}
+
+.list-item{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer svg{
+	height: 40px;
+}
+
+footer span{
+	font-size: 40px;
 	margin: 6px;
 }
 
