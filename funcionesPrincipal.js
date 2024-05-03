@@ -26,7 +26,6 @@ addEventListener("scroll", function(){ocultarHeader();});
 
 //modificar elementos con el ancho de pantalla
 
-
 let volleyContainer = document.querySelectorAll('.video-board-container')[1];
 let baseballContainer = document.querySelectorAll('.video-board-container')[3];
 let volleyVideo = document.querySelector('.video-volley');
@@ -47,4 +46,3 @@ const intercambiarItems = ()=>{
 
 intercambiarItems();
 window.addEventListener("resize", function(){intercambiarItems();});
-
