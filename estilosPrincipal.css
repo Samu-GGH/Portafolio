@@ -52,7 +52,7 @@ body{
 .links-list > li > a{
 	position: relative;
 	height: 70%;
- 	color: #cccccc;
+ 	color: #999999;
  	font-weight: 500;
 	font-size: 15px;
  	padding: 4px 0;
@@ -60,7 +60,7 @@ body{
  	transition: 0.2s ease;
 }
 
-a:after{
+.links-list > li > a:after{
 	content: "";
 	position: absolute;
 	background-color: #ffffff;
@@ -77,12 +77,12 @@ a:after{
  	color: #ffffff;
 }
 
-a:hover::after{
+.links-list > li > a:hover::after{
 	transform: scale(1, 1);
 }
 
 .section-title{
-	color: #cccccc;
+	color: #999999;
 }
 
 .main-container, .projects-container{
@@ -113,7 +113,7 @@ a:hover::after{
 
 .aboutMe-title, .contact-title{
 	position: relative;
-	color: #cccccc;
+	color: #999999;
 	margin: 7px;
 	font-weight: bold;
 	text-align: center;
@@ -132,7 +132,7 @@ a:hover::after{
 	margin: 15px 15px 5px 15px;
 	text-align: justify;
 	font-size: 13px;
-	color: #cccccc;
+	color: #999999;
 }
 
 .video-board-container, .video-wp-container{
@@ -141,7 +141,7 @@ a:hover::after{
 
 .project-title{
 	position: relative;
-	color: #cccccc;
+	color: #999999;
 	padding: 7px;
 	font-weight: bold;
 	text-align: center;
@@ -158,7 +158,7 @@ a:hover::after{
 
 .function-list{
 	font-size: 13px;
-	color: #cccccc;
+	color: #999999;
 }
 
 .rolldown{
@@ -179,7 +179,7 @@ a:hover::after{
 	background: transparent;
 	padding: 10px 0;
 	margin: 0;
-	height: 180px;
+	height: 215px;
 	justify-content: space-around;
 	align-content: space-between;
 	flex-wrap: wrap;
@@ -188,7 +188,7 @@ a:hover::after{
 }
 
 footer svg{
-	color: #cccccc;
+	color: #999999;
     height: 13px;
 	transition: .5s ease;
 }
@@ -208,7 +208,7 @@ footer svg{
 }
 
 footer span{
-	color: #cccccc;
+	color: #999999;
 	font-size: 13px;
 	font-weight: bold;
 	margin: 3px;
@@ -229,10 +229,16 @@ footer span{
 	margin: 5px 0 2px 0;
 	justify-content: center;
 	align-items: center;
-	cursor: pointer;
 }
 
-.list-item:hover > span, .list-item:hover > svg{
+.footer-link{
+	position: relative;
+ 	text-decoration: none;
+ 	transition: 0.2s ease;
+	 cursor: pointer;
+}
+
+.footer-link:hover > span, .footer-link:hover > svg{
 	color: #ffffff;
 	transition: .5s ease;
 }
@@ -252,7 +258,7 @@ footer span{
 .header-container{
 		height: 90px;
 		justify-content: space-evenly;
-	}
+}
 
 .links-list{
 	justify-content: space-evenly;
@@ -301,7 +307,7 @@ footer span{
 }
 
 .footer-container{
-	height: 120px;
+	height: 140px;
 }
 
 .list-item{
@@ -327,10 +333,20 @@ footer span{
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 .header-container{
 	justify-content: space-evenly;
+	height: 60px;
+}
+
+.links-list{
+	justify-content: end;
+}
+
+.links-list > li{
+	margin: 0 15px;
 }
 
 .myName{
 	font-size: 40px;
+	margin-top: 0;
 }
 
 .links-list > li > a{
@@ -395,11 +411,20 @@ footer span{
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
 .header-container{
 	justify-content: space-evenly;
-	height: 120px;
+	height: 80px;
+}
+
+.links-list{
+	justify-content: end;
+}
+
+.links-list > li{
+	margin: 0 18px;
 }
 
 .myName{
 	font-size: 55px;
+	margin-top: 0;
 }
 
 .links-list > li > a{
@@ -464,11 +489,20 @@ footer span{
 @media screen and (min-width: 1440px) and (max-width: 1800px) {
 .header-container{
 	justify-content: space-evenly;
-	height: 125px;
+	height: 80px;
+}
+
+.links-list{
+	justify-content: end;
+}
+
+.links-list > li{
+	margin: 0 20px;
 }
 
 .myName{
 	font-size: 62px;
+	margin-top: 0;
 }
 
 .links-list > li > a{
@@ -533,7 +567,15 @@ footer span{
 @media screen and (min-width: 1800px) {
 .header-container{
 	justify-content: space-evenly;
-	height: 140px;
+	height: 100px;
+}
+
+.links-list{
+	justify-content: end;
+}
+
+.links-list > li{
+	margin: 0 22px;
 }
 
 .myName{
